@@ -8,5 +8,18 @@ npm install -S afeiship/next-refresh-timer --registry=https://registry.npm.taoba
 
 ## usage:
 ```js
-//DOCS here!
+var total = 0;
+var res = nx.refreshTimer(function () {
+  total++;
+  console.log('add!');
+  return new Promise((resolve) => {
+    resolve(total);
+  })
+}, (resp) => {
+  console.log(resp);
+  if (total === 3) {
+    console.log('destroyed!');
+    res.destroy();
+  }
+}, 3000);
 ```
