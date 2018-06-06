@@ -8,17 +8,8 @@ require('../src/next-refresh-timer');
 var total = 0;
 var res = nx.refreshTimer(function () {
   total++;
-  console.log('add!');
-  return new Promise((resolve) => {
-    resolve(total);
-  })
-}, (resp) => {
-  console.log(resp);
-  if (total === 3) {
-    console.log('destroyed!');
-    res.destroy();
-  }
-}, 3000);
+  console.log(total);
+}, 3000, true);
 
 
   // });
