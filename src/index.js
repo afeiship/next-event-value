@@ -5,7 +5,7 @@
 
   nx.eventValue = function (inEvent, inOptions) {
     var options = nx.mix(null, defaults, inOptions);
-    return nx.get(inEvent, options.path, nx.get(inEvent, 'detail.value')) || inEvent;
+    return nx.get(inEvent, options.path, nx.get(inEvent, 'detail.value', inEvent));
   };
 
   if (typeof module !== 'undefined' && module.exports) {
