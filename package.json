@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-event-value",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Get event value from evet.target/detail/value.",
   "homepage": "https://js.work",
   "author": {
@@ -43,5 +43,22 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
-  }
+  },
+  "keywords": [
+    "next",
+    "event",
+    "target",
+    "detail",
+    "value",
+    "mp",
+    "weixin",
+    "mina",
+    "weapp",
+    "react",
+    "form",
+    "input",
+    "checkbox",
+    "radio",
+    "switch"
+  ]
 }
